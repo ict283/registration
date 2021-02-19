@@ -1,8 +1,4 @@
-// MAIN.CPP - Case Study, Student Registration
-
-// Count the number of courses taken by the student, calculate total credits
-// author KRI
-//
+// For review purposes only! Does not represent the actual solution!
 
 #include <iostream>
 #include <fstream>
@@ -41,4 +37,3 @@ int main()
 
   return 0;
 }
-

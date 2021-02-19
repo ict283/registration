@@ -1,6 +1,4 @@
-// REGIST.H - Registration class definition
-// author KRI
-// modified smr
+// For review purposes only! Does not represent the actual solution!
 
 #ifndef REGIST_H
 #define REGIST_H
@@ -45,4 +43,3 @@ inline unsigned Registration::GetCount() const
 }
 
 #endif
-

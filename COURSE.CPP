@@ -1,4 +1,4 @@
-// COURSE.CPP - Course class implementation
+// For review purposes only! Does not represent the actual solution!
 
 #include "course.h"
 
