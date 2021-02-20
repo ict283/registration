@@ -27,14 +27,23 @@ void Course::SetCredits( unsigned cred )
 
 istream & operator >>( istream & input, Course & C )
 {
-  input >> C.name >> C.section >> C.credits;
+  Y name;
+  Y section;
+  Y credits;
+
+  input >> name >> section >> credits;
+
+  C.setName(name);
+  C.setSection(section);
+  C.setCredits(credits);
+
   return input;
 }
 
 ostream & operator <<( ostream & os, const Course & C )
 {
-  os << "  Course:  " << C.name << '\n'
-     << "  Section: " << C.section << '\n'
-     << "  Credits: " << C.credits << '\n';
+  os << "  Course:  " << C.getName() << '\n'
+     << "  Section: " << C.getSection() << '\n'
+     << "  Credits: " << C.getCredits() << '\n';
   return os;
 }

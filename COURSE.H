@@ -15,11 +15,19 @@ public:
   // Construct a course from a name, section letter,
   // and number of credits.
 
-  unsigned GetCredits() const;
+  unsigned getCredits() const;
   // Get the number of credits.
 
-  void SetCredits( unsigned cred );
+  void setCredits( unsigned cred );
   // Set the number of credits.
+
+  Y setName (Y name);
+
+  Y getName ();
+
+  Y setSection (Y name);
+
+  Y getSection ();
 
 private:
   string name;
