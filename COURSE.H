@@ -4,16 +4,14 @@
 #define COURSE_H
 
 #include <iostream>
-#include <string.h>  // C string library
+#include <string>
 
 using namespace std;
-
-const unsigned CourseNameSize = 10;
 
 class Course {
 public:
   Course();
-  Course( const char * nam, char sect, unsigned cred );
+  Course( const string nam, char sect, unsigned cred );
   // Construct a course from a name, section letter,
   // and number of credits.
 
@@ -32,7 +30,7 @@ public:
   friend istream & operator >>( istream & input, Course & C );
 
 private:
-  char name[CourseNameSize];  // course name, C style string. not a C++ string object
+  string name;
   char section;   // section (letter) can be enrolment mode
   int  credits;   // number of credits
 };
