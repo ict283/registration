@@ -15,9 +15,19 @@ public:
   // Construct a course from a name, section letter,
   // and number of credits.
 
+  /**
+    * @brief Get credits
+    * @pre   Credits obj must be initalised
+    * @post  Returns credit
+    */
   unsigned getCredits() const;
   // Get the number of credits.
 
+  /**
+    * @brief set credit
+    * @param credit
+    * @post  credit is modified
+    */
   void setCredits( unsigned cred );
   // Set the number of credits.
 
