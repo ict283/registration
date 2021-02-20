@@ -15,12 +15,12 @@ Course::Course( const char * nam, char sect,
   credits = cred;
 }
 
-inline unsigned Course::GetCredits() const
+unsigned Course::GetCredits() const
 {
   return credits;
 }
 
-inline void Course::SetCredits( unsigned cred )
+void Course::SetCredits( unsigned cred )
 {
   credits = cred;
 }
