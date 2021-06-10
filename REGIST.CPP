@@ -1,4 +1,4 @@
-// REGIST.CPP - Registration class implementation.
+// For review purposes only! Does not represent the actual solution!!
 
 #include "regist.h"
 

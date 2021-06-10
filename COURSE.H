@@ -1,6 +1,4 @@
-// COURSE.H - Course class definition
-// author KRI
-// modified smr
+// For review purposes only! Does not represent the actual solution!!
 
 #ifndef COURSE_H
 #define COURSE_H
