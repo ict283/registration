@@ -24,6 +24,7 @@ unsigned Registration::getCount() const
 
 istream & operator >>( istream & input, Registration & R )
 {
+  //use setters instead
   input >> R.studentId >> R.semester >> R.count;
 
   for(unsigned i = 0; i < R.count; i++)
@@ -34,6 +35,7 @@ istream & operator >>( istream & input, Registration & R )
 
 ostream & operator <<( ostream & os, const Registration & R )
 {
+  //use getters instead
   os << "Student ID: " << R.studentId << '\n'
      << "Semester:   " << R.semester << '\n';
 

@@ -27,12 +27,14 @@ void Course::setCredits( unsigned cred )
 
 istream & operator >>( istream & input, Course & C )
 {
+  //use setters instead
   input >> C.name >> C.section >> C.credits;
   return input;
 }
 
 ostream & operator <<( ostream & os, const Course & C )
 {
+  //use getters instead
   os << "  Course:  " << C.name << '\n'
      << "  Section: " << C.section << '\n'
      << "  Credits: " << C.credits << '\n';

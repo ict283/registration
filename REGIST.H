@@ -18,18 +18,6 @@ public:
   unsigned GetCredits() const;
   unsigned GetCount() const;
 
-
-  // These operators have been made friends. They have
-  // privileged access to class internals.
-  // Very useful for debugging the class, but not very good for class design.
-  // We will keep using it for now but you will have a chance in a later lab
-  // to redesign this class.
-  friend ostream & operator <<( ostream & os,
-         const Registration & R);
-
-  friend istream & operator >>( istream & input,
-         Registration & R );
-
   // Write the implementation (.cpp) yourself
 
   Y getStudentId();
@@ -54,5 +42,9 @@ private:
   unsigned count;             // number of courses
   Course courses[MaxCourses]; // array of courses
 };
+
+ostream & operator <<( ostream & os, const Registration & R);
+
+istream & operator >>( istream & input, Registration & R );
 
 #endif
