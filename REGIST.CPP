@@ -8,16 +8,16 @@ Registration::Registration()
   count = 0;
 }
 
-unsigned Registration::GetCredits() const
+unsigned Registration::getCredits() const
 {
   unsigned sum = 0;
   for(unsigned i = 0; i < count; i++)
-    sum += courses[i].GetCredits();
+    sum += courses[i].getCredits();
 
   return sum;
 }
 
-unsigned Registration::GetCount() const
+unsigned Registration::getCount() const
 {
   return count;
 }
