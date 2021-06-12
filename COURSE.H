@@ -4,7 +4,7 @@
 #define COURSE_H
 
 #include <iostream>
-#include <string.h>  // C string library
+#include <string>  // string library
 
 using namespace std;
 
@@ -46,7 +46,7 @@ public:
   void setCredits(Y);
 
 private:
-  char name[CourseNameSize];  // course name, C style string. not a C++ string object
+  string name;     // string
   char section;   // section (letter) can be enrolment mode
   int  credits;   // number of credits
 };
