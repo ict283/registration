@@ -30,6 +30,24 @@ public:
   friend istream & operator >>( istream & input,
          Registration & R );
 
+  // Write the implementation (.cpp) yourself
+
+  Y getStudentId();
+
+  void setStudentId(Y);
+
+  Y getSemester();
+
+  void setSemester(Y);
+
+  Y getCount();
+
+  void setCount(Y);
+
+  Y getCourses();
+
+  void setCourses(Y);
+
 private:
   long studentId;             // student ID number
   unsigned semester;          // semester year, number

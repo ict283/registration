@@ -31,6 +31,20 @@ public:
   friend ostream & operator <<( ostream & os, const Course & C );
   friend istream & operator >>( istream & input, Course & C );
 
+  // Write the implementation (.cpp) yourself
+
+  Y getName();
+
+  void setName(Y);
+
+  Y getSection();
+
+  void setSection(Y);
+
+  Y getCredits();
+
+  void setCredits(Y);
+
 private:
   char name[CourseNameSize];  // course name, C style string. not a C++ string object
   char section;   // section (letter) can be enrolment mode
