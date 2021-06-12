@@ -55,9 +55,4 @@ private:
   Course courses[MaxCourses]; // array of courses
 };
 
-inline unsigned Registration::GetCount() const
-{
-  return count;
-}
-
 #endif

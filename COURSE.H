@@ -51,15 +51,4 @@ private:
   int  credits;   // number of credits
 };
 
-
-inline unsigned Course::GetCredits() const
-{
-  return credits;
-}
-
-inline void Course::SetCredits( unsigned cred )
-{
-  credits = cred;
-}
-
 #endif

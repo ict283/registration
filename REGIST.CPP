@@ -17,6 +17,11 @@ unsigned Registration::GetCredits() const
   return sum;
 }
 
+unsigned Registration::GetCount() const
+{
+  return count;
+}
+
 istream & operator >>( istream & input, Registration & R )
 {
   input >> R.studentId >> R.semester >> R.count;

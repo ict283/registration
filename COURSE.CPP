@@ -15,6 +15,16 @@ Course::Course( const char * nam, char sect,
   credits = cred;
 }
 
+unsigned Course::GetCredits() const
+{
+  return credits;
+}
+
+void Course::SetCredits( unsigned cred )
+{
+  credits = cred;
+}
+
 istream & operator >>( istream & input, Course & C )
 {
   input >> C.name >> C.section >> C.credits;
