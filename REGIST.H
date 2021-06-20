@@ -1,6 +1,4 @@
-// REGIST.H - Registration class definition
-// author KRI
-// modified smr
+// For review purposes only! Does not represent the actual solution!!
 
 #ifndef REGIST_H
 #define REGIST_H
@@ -20,17 +18,23 @@ public:
   unsigned GetCredits() const;
   unsigned GetCount() const;
 
+  // Write the implementation (.cpp) yourself
 
-  // These operators have been made friends. They have
-  // privileged access to class internals.
-  // Very useful for debugging the class, but not very good for class design.
-  // We will keep using it for now but you will have a chance in a later lab
-  // to redesign this class.
-  friend ostream & operator <<( ostream & os,
-         const Registration & R);
+  Y getStudentId();
 
-  friend istream & operator >>( istream & input,
-         Registration & R );
+  void setStudentId(Y);
+
+  Y getSemester();
+
+  void setSemester(Y);
+
+  Y getCount();
+
+  void setCount(Y);
+
+  Y getCourses();
+
+  void setCourses(Y);
 
 private:
   long studentId;             // student ID number
@@ -39,10 +43,8 @@ private:
   Course courses[MaxCourses]; // array of courses
 };
 
-inline unsigned Registration::GetCount() const
-{
-  return count;
-}
+ostream & operator <<( ostream & os, const Registration & R);
+
+istream & operator >>( istream & input, Registration & R );
 
 #endif
-

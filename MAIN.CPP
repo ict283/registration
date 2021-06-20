@@ -1,13 +1,14 @@
-// MAIN.CPP - Case Study, Student Registration
-
-// Count the number of courses taken by the student, calculate total credits
-// author KRI
-//
+// For review purposes only! Does not represent the actual solution!!
 
 #include <iostream>
 #include <fstream>
 #include "course.h"  // Course class declaration
 #include "regist.h"  // Registration class declaration
+
+//Unit tests
+#include test/DATE_TEST.H     // runAllDateTests();
+#include test/COURSE_TEST.H   // runAllCourseTests();
+#include test/REGIST_TEST.H   // runAllRegistTests();
 
 using namespace std;
 
@@ -41,4 +42,3 @@ int main()
 
   return 0;
 }
-
